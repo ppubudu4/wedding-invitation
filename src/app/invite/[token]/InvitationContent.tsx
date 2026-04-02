@@ -43,7 +43,7 @@ const InvitationContent = ({ guest }: InvitationContentProps) => (
           Will You Be Joining Us?
         </h2>
         <p className="mt-4 text-charcoal-light">
-          Please let us know by August 1, 2026
+          Please let us know by September 1, 2026
         </p>
       </AnimatedSection>
 
@@ -59,7 +59,7 @@ const InvitationContent = ({ guest }: InvitationContentProps) => (
         We can&apos;t wait to celebrate with you!
       </p>
       <p className="mt-2 text-sm text-charcoal-light">
-        With love, Alexander &amp; Victoria
+        With love, Pubudu &amp; Chaya
       </p>
     </footer>
   </main>
