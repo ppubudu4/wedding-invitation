@@ -32,7 +32,7 @@ const RootLayout = ({
     lang="en"
     className={`${playfair.variable} ${cormorant.variable} h-full antialiased`}
   >
-    <body className="min-h-full flex flex-col bg-cream text-charcoal font-body">
+    <body className="relative min-h-full flex flex-col bg-cream text-charcoal font-body">
       {children}
       <SpeedInsights />
       <Analytics />
