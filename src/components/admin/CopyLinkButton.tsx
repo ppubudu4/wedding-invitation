@@ -3,7 +3,6 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Copy, Check } from "lucide-react";
-import { WEDDING } from "@/lib/constants";
 
 type CopyLinkButtonProps = {
   token: string;
@@ -13,7 +12,7 @@ const CopyLinkButton = ({ token }: CopyLinkButtonProps) => {
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopy = useCallback(async () => {
-    const url = `${WEDDING.siteUrl}/invite/${token}`;
+    const url = `${window.location.origin}/invite/${token}`;
     await navigator.clipboard.writeText(url);
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
