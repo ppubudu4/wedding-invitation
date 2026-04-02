@@ -20,5 +20,4 @@ export const WEDDING = {
     { time: "8:00 PM", event: "Dancing & Celebration", icon: "music" as const },
   ],
   dressCode: "Formal / Black Tie Optional",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
 } as const;
