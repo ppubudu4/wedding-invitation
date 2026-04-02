@@ -73,9 +73,15 @@ const HeroSection = ({ guestName }: HeroSectionProps) => {
       >
         <motion.p
           variants={fadeUp}
-          className="mb-4 text-sm tracking-[0.35em] uppercase text-gold-light font-body"
+          className="mb-2 text-sm tracking-[0.35em] uppercase text-gold-light font-body"
         >
-          Together with their families
+          The {WEDDING.families.groom} &amp; {WEDDING.families.bride} families
+        </motion.p>
+        <motion.p
+          variants={fadeUp}
+          className="mb-6 text-xs tracking-[0.3em] uppercase text-white/60 font-body"
+        >
+          request the pleasure of your company
         </motion.p>
 
         <motion.h1
@@ -103,16 +109,21 @@ const HeroSection = ({ guestName }: HeroSectionProps) => {
           <span className="h-px w-12 bg-gold-light/60" />
         </motion.div>
 
-        <motion.p
+        <motion.div
           variants={fadeUp}
-          className="mt-10 max-w-md text-xl italic text-white/90 sm:text-2xl font-body"
+          className="mt-10 flex flex-col items-center gap-3"
         >
-          We can&apos;t wait to celebrate with you,{" "}
-          <span className="font-semibold text-gold-light not-italic">
+          <p className="text-sm tracking-[0.2em] uppercase text-white/60 font-body">
+            Dear
+          </p>
+          <span className="font-heading text-3xl text-gold-light drop-shadow-[0_0_15px_rgba(212,175,55,0.4)] sm:text-4xl md:text-5xl">
             {guestName}
           </span>
-          !
-        </motion.p>
+          <span className="h-px w-20 bg-gold/40" />
+          <p className="max-w-sm text-base italic text-white/80 font-body sm:text-lg">
+            We would be honored to have you celebrate with us
+          </p>
+        </motion.div>
 
         <motion.div variants={fadeUp} className="mt-16">
           <motion.a

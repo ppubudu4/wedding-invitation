@@ -18,9 +18,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Alexander & Victoria — Wedding Invitation",
+  title: "Pubudu & Chaya — Wedding Invitation",
   description:
-    "You are cordially invited to celebrate the wedding of Alexander & Victoria.",
+    "You are cordially invited to celebrate the wedding of Pubudu & Chaya.",
 };
 
 const RootLayout = ({
